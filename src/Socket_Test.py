@@ -28,7 +28,7 @@ def BuildSocket(ip):
 		raise socket.error
 	s.setsockopt(socket.SOL_SOCKET,socket.SO_REUSEADDR,1)
 	return s
-def Socket_Test(IP, Port = 443):
+def Socket_Test(IP, Port = 80):
 	STA = time.time()
 	#==============
 	#print "Start", IP
